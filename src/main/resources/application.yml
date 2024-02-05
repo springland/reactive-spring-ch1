@@ -1,0 +1,11 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health
+
